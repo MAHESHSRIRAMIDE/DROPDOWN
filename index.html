@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  overflow:hidden;
+  background-image: url(rays.gif);
+  padding: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  box-shadow: 5px 5px 5px grey;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+a.active {
+  background-color:rgb(241, 233, 233);
+  
+}
+
+.search-container {
+  float: right;
+}
+
+
+.search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+.arrow {
+  border: solid rgb(231, 228, 228);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+</style>
+</head>
+<body>
+<ul>
+  <li>
+    <div style="margin-top: 10%;">
+    <a class="active" href="#about" ><img height="30";width="50"; src="menu.gif" alt=""></a> </li> 
+    <li><a href="#about" style="margin-left: 25%;"><img height="47";width="90"; src="bgmringtone.png" alt=""></a> </li>
+    </div>
+    <div style="margin-left: 35%;padding: 4px;">
+    <li><a href="#home" class="active" style="color: black;"><strong>Home</strong></a></li>
+    <li class="dropdown">
+      <a class="dropbtn"><strong>Movies&nbsp; <i class="arrow down"></i></strong></a>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+       
+    <li class="dropdown">
+    <a class="dropbtn"><strong>Blogs&nbsp; <i class="arrow down"></i></strong></a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <li><a href="#news"><strong>Help</strong></a></li>  
+    </div>
+  </div>
+  <div class="search-container" >
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search ringtone.." name="search">
+      <button type="submit">Go</button>
+    </form>
+  </div>
+  </li>
+</ul>
+
+
+
+</body>
+</html>
